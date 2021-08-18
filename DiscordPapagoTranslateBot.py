@@ -48,7 +48,7 @@ async def on_message(ctx):
                     targetLang2 = "ja"
 
                 else:
-                    await ctx.channel.send(f"Detected language : '{res_json['langCode'].upper()}'")
+                    await ctx.channel.send(f"[ERROR] Language not supported.\nDetected language : ' {res_json['langCode'].upper()} '")
                     return
 
                 encText = urllib.parse.quote(message)
@@ -81,7 +81,7 @@ async def on_message(ctx):
                 return
 
         else:
-            await ctx.channel.send("[ERROR]\n500자 이내로 작성 해 주십시오.\n100文字以内で作成して下さい。")
+            await ctx.channel.send(f"[ERROR] Input Limit : 500 Characters\nDetected Characters : ' {len(message)} '")
             return
 
     else:
