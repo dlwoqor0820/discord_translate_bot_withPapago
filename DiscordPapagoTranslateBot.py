@@ -3,9 +3,9 @@ from discord.ext import commands
 import urllib.request
 import json
 bot = commands.Bot(command_prefix='')
-TOKEN = 'NzgzNDkxNjk0MjcyMTg0MzYx.X8bhgA.8KPGrRXRQUrrV9xEye4pwVHLIr8'
-client_ID = "bbVOGQumI6XjRgjy0xKf"
-client_SECRET = "i3iMBqJXF1"
+TOKEN = ""
+client_ID = ""
+client_SECRET = ""
 
 
 @bot.event
