@@ -48,7 +48,7 @@ async def on_message(ctx):
                     targetLang2 = "ja"
 
                 else:
-                    await ctx.channel.send(f"Detected language : '{res_json['langCode'].upper()}'\n지원하지 않는 언어입니다.\n対応していない言語です。")
+                    await ctx.channel.send(f"Detected language : '{res_json['langCode'].upper()}'")
                     return
 
                 encText = urllib.parse.quote(message)
